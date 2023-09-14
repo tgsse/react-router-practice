@@ -1,11 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"7777777777777777777777777","image":"https://images.freeimages.com/images/large-previews/a23/rainbow-lights-1491649.jpg","date":"2023-09-09","description":"7","id":"5dada837-7179-4dc8-8737-cd54980fc6a9"},{"title":"3333333333333333333333333","image":"https://images.freeimages.com/images/large-previews/a23/rainbow-lights-1491649.jpg","date":"2023-09-02","description":"f","id":"5f36da6d-0731-4533-bb50-89af038ed57f"},{"title":"222222222222222222","image":"https://images.freeimages.com/images/large-previews/a23/rainbow-lights-1491649.jpg","date":"2023-09-22","description":"sadfadsfasfa","id":"09c1da2c-9978-4db1-8289-add873e9bd4f"},{"title":"11111111111111111111111111111","image":"https://images.freeimages.com/images/large-previews/a23/rainbow-lights-1491649.jpg","date":"2023-09-16","description":"11111111111111111111111111111111111","id":"36c7d269-9bf7-44ba-a254-14c124b1fedd"},{"title":"afsdsadfasdfasf","image":"https://images.freeimages.com/images/large-previews/a23/rainbow-lights-1491649.jpg","date":"2023-10-08","description":"ff","id":"303e9d0b-d10c-4e9f-a990-a335f03c5de3"},{"title":"faaasdfsfasdfasdfasdf","image":"https://images.freeimages.com/images/large-previews/a23/rainbow-lights-1491649.jpg","date":"2023-09-01","description":"dfsafsad","id":"07c3087a-763c-4106-aef2-9b60203bffac"},{"title":"a","image":"https://images.freeimages.com/images/large-previews/a23/rainbow-lights-1491649.jpg","date":"2023-09-01","description":"f","id":"6051152a-1248-4d42-8f27-a61053bf5105"},{"title":"fffffsadfasdf","image":"https://images.freeimages.com/images/large-previews/a23/rainbow-lights-1491649.jpg","date":"2023-09-02","description":"dsfasfd","id":"46e335cd-2da8-4b7b-947d-eed16caa4639"},{"id":"e1","title":"A dummy event","date":"2023-02-22","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event and connect with fellow developers."}]}

@@ -13,7 +13,7 @@ function MainNavigation() {
                         <NavLink to={'/events'} end className={({isActive}) => isActive ? classes.active : null}>Events</NavLink>
                     </li>
                     <li>
-                        <NavLink to={'/events/new'} className={({isActive}) => isActive ? classes.active : null}>Events</NavLink>
+                        <NavLink to={'/events/new'} className={({isActive}) => isActive ? classes.active : null}>New Event</NavLink>
                     </li>
                 </ul>
             </nav>
