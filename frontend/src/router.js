@@ -7,11 +7,17 @@ import EventDetailPage, {deleteItemAction, eventDetailLoader} from "./pages/Even
 import MainNavigation from "./components/Root";
 import EventsRootLayout from "./components/EventsRootLayout";
 import {editOrCreateEventAction} from "./components/EventForm";
+import Authentication, {authAction} from "./pages/Authentication";
 
 const router = createBrowserRouter([
     {
         path: '/', element: <MainNavigation/>, children: [
             {index: true, element: <HomePage/>},
+            {
+                path: 'auth',
+                element: <Authentication />,
+                action: authAction,
+            },
             {
                 path: '/events',
                 element: <EventsRootLayout/>,

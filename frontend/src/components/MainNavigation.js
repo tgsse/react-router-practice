@@ -15,6 +15,9 @@ function MainNavigation() {
                     <li>
                         <NavLink to={'/events/new'} className={({isActive}) => isActive ? classes.active : null}>New Event</NavLink>
                     </li>
+                    <li>
+                        <NavLink to={'/auth?mode=login'} className={({isActive}) => isActive ? classes.active : null}>Sign in</NavLink>
+                    </li>
                 </ul>
             </nav>
         </header>
