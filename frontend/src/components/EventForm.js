@@ -2,6 +2,7 @@ import {Form, redirect, useActionData, useNavigate, useNavigation} from 'react-r
 
 import classes from './EventForm.module.css';
 import * as events from "events";
+import {getAuthToken} from "../util/util";
 
 function EventForm({method, event}) {
     const navigate = useNavigate();
@@ -72,7 +73,8 @@ export async function editOrCreateEventAction({request, params}) {
         const response = await fetch(url, {
             method: request.method,
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${getAuthToken()}`,
             },
             body: JSON.stringify(eventData)
         })

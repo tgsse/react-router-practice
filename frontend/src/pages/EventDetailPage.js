@@ -1,5 +1,6 @@
 import {redirect, useLoaderData, useParams} from "react-router-dom";
 import EventItem from "../components/EventItem";
+import {getAuthToken} from "../util/util";
 
 export default function EventDetailPage() {
     const fetchedEvent = useLoaderData()
@@ -29,7 +30,8 @@ export async function eventDetailLoader({params}) {
 export async function deleteItemAction({params, request}) {
     try {
         const response = await fetch(`http://localhost:8080/events/${params.id}`, {
-            method: request.method
+            method: request.method,
+            'Authorization': `Bearer ${getAuthToken()}`
         })
         if (!response.ok) {
             const message = `${response.status}: ${response.statusText}`
