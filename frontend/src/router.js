@@ -8,10 +8,16 @@ import MainNavigation from "./components/Root";
 import EventsRootLayout from "./components/EventsRootLayout";
 import {editOrCreateEventAction} from "./components/EventForm";
 import Authentication, {authAction} from "./pages/Authentication";
+import {logoutAction} from "./pages/Logout";
+import {checkAuthLoader, tokenLoader} from "./util/util";
 
 const router = createBrowserRouter([
     {
-        path: '/', element: <MainNavigation/>, children: [
+        path: '/',
+        element: <MainNavigation/>,
+        id: 'root',
+        loader: tokenLoader,
+        children: [
             {index: true, element: <HomePage/>},
             {
                 path: 'auth',
@@ -29,9 +35,13 @@ const router = createBrowserRouter([
                     },
                     {path: '/events/:id', element: <EventDetailPage/>, loader: eventDetailLoader, action: deleteItemAction},
                     {path: '/events/:id/edit', element: <EditEventPage/>, loader: eventDetailLoader, action: editOrCreateEventAction},
-                    {path: '/events/new', element: <NewEventPage/>, action: editOrCreateEventAction},
+                    {path: '/events/new', element: <NewEventPage/>, action: editOrCreateEventAction, loader: checkAuthLoader},
                 ]
             },
+            {
+                path: 'logout',
+                action: logoutAction,
+            }
         ]
     },
 ])

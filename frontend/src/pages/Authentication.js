@@ -40,6 +40,9 @@ export async function authAction({request}) {
             // save authData.token
             const token = authData.token
             localStorage.setItem('token', token)
+            const expiration = new Date()
+            expiration.setHours(expiration.getHours() + 1)
+            localStorage.setItem('tokenExpiration',expiration.toISOString())
             return authData
         })
         .catch(e => {
