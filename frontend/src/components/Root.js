@@ -8,19 +8,19 @@ export default function Root() {
     const token = useLoaderData()
     const submit = useSubmit()
 
-    useEffect(() => {
-        if (token === null) {
-            submit(null, {action: '/logout', method: 'post'})
-            return null
-        } else if (!token) {
-            return null
-        }
-
-        const duration = getTokenDuration()
-        setTimeout(() => {
-            submit(null, {action: '/logout', method: 'post'})
-        }, duration)
-    }, [token, submit]);
+    // useEffect(() => {
+    //     if (token === null) {
+    //         submit(null, {action: '/logout', method: 'post'})
+    //         return null
+    //     } else if (!token) {
+    //         return null
+    //     }
+    //
+    //     const duration = getTokenDuration()
+    //     setTimeout(() => {
+    //         submit(null, {action: '/logout', method: 'post'})
+    //     }, duration)
+    // }, [token, submit]);
     return (
         <>
             <MainNavigation />
